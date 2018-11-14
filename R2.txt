@@ -1,0 +1,471 @@
+> weather <- sample(c("sunny", "rainy"), size = 1)
+> weather
+[1] "sunny"
+> if (weather == "sunny"){
++   print("Running outdoors!")
++ } else {
++   print("Working out in the gym!")
++ }
+[1] "Running outdoors!"
+> 
+> score<-59
+> if(score>=60){
++   print("の")
++ }else{
++   print("ぃの")
++ }
+[1] "ぃの"
+> score<-80
+> if(score>=60){
++   print("の")
++ }else{
++   print("ぃの")
++ }
+[1] "の"
+> 
+> my_seq <- 1:10
+> for (i in my_seq) {
++   
++   if (i %% 2 == 0) {
++     print(paste(i, "琌案计"))
++   } else {
++     print(paste(i, "琌计"))
++   }
++ }
+[1] "1 琌计"
+[1] "2 琌案计"
+[1] "3 琌计"
+[1] "4 琌案计"
+[1] "5 琌计"
+[1] "6 琌案计"
+[1] "7 琌计"
+[1] "8 琌案计"
+[1] "9 琌计"
+[1] "10 琌案计"
+> score<-95
+> if(score>=90){
++   print("纔╭")
++ }else if(score>=60){
++   print("の")
++ }else{
++   print("ぃの")
++ }
+[1] "纔╭"
+> my_seq <- 1:10
+> for (i in my_seq) {
++   if (i %% 3 == 0) {
++     print(paste(i, "砆 3 俱埃"))
++   } else if (i %% 3 == 1) {
++     print(paste(i, "埃 3 緇计琌 1"))
++   } else {
++     print(paste(i, "埃 3 緇计琌 2"))
++   }
++ }
+[1] "1 埃 3 緇计琌 1"
+[1] "2 埃 3 緇计琌 2"
+[1] "3 砆 3 俱埃"
+[1] "4 埃 3 緇计琌 1"
+[1] "5 埃 3 緇计琌 2"
+[1] "6 砆 3 俱埃"
+[1] "7 埃 3 緇计琌 1"
+[1] "8 埃 3 緇计琌 2"
+[1] "9 砆 3 俱埃"
+[1] "10 埃 3 緇计琌 1"
+> for (n in 1:10){
++   #n虫?跑计1:10惠璶硋?磅?把计秖
++   print(n)
++ }
+[1] 1
+[1] 2
+[1] 3
+[1] 4
+[1] 5
+[1] 6
+[1] 7
+[1] 8
+[1] 9
+[1] 10
+> for (month in month.name){
++   print(month)
++ }
+[1] "January"
+[1] "February"
+[1] "March"
+[1] "April"
+[1] "May"
+[1] "June"
+[1] "July"
+[1] "August"
+[1] "September"
+[1] "October"
+[1] "November"
+[1] "December"
+> x <- 0
+> while (x<=5) {
++   print(x)
++   x<-x+1
++ }
+[1] 0
+[1] 1
+[1] 2
+[1] 3
+[1] 4
+[1] 5
+> i <- 1
+> while (i < 13){
++   print(month.name[i])
++   i <- i + 1
++ }
+[1] "January"
+[1] "February"
+[1] "March"
+[1] "April"
+[1] "May"
+[1] "June"
+[1] "July"
+[1] "August"
+[1] "September"
+[1] "October"
+[1] "November"
+[1] "December"
+> flip_results <- c() # ミ?秖ㄓ竚–?Ωщ耏挡狦
+> coin <- c(TRUE, FALSE) # TRUE タ?FALSE は?
+> n_flips <- 1 # 眖材?Ωщ耏秨﹍癘魁
+> while (sum(flip_results) < 3){
++   flip_results[n_flips] <- sample(coin, size = 1) # 盢–Ωщ耏挡狦癘魁癬ㄓ
++   n_flips <- n_flips + 1 # 非称癘魁?Ωщ耏挡狦
++ }
+> flip_results # –Ωщ耏魁
+[1] FALSE  TRUE FALSE  TRUE  TRUE
+> length(flip_results) # 羆щ耏碭Ω
+[1] 5
+> length(flip_results) # 羆щ耏碭Ω
+[1] 5
+> [1] 3
+Error: unexpected '[' in "["
+> 
+> length(flip_results) # 羆щ耏碭Ω
+[1] 5
+> [1] 6
+Error: unexpected '[' in "["
+> 
+> for (n in 1:10){
++   if(n%%2==0){ #案计钡块计
++     print(n)
++   }else{
++     print("计") #计玥块"计"
++   }
++ }
+[1] "计"
+[1] 2
+[1] "计"
+[1] 4
+[1] "计"
+[1] 6
+[1] "计"
+[1] 8
+[1] "计"
+[1] 10
+> for (month in month.name){
++   if (month == "April"){
++     break
++   } else {
++     print(month)
++   }
++ }
+[1] "January"
+[1] "February"
+[1] "March"
+> for (month in month.name){
++   if (month == "April"){
++     break
++   } else {
++     print(month)
++   }
++ }
+[1] "January"
+[1] "February"
+[1] "March"
+> floor(9.527)
+[1] 9
+> nums <- sqrt(c(7, 17, 27, 37, 47))
+> nums
+[1] 2.645751 4.123106 5.196152 6.082763 6.855655
+> floor(nums)
+[1] 2 4 5 6 6
+> 
+> round(9.527)
+[1] 10
+> round(9.527, digits = 0)
+[1] 10
+> round(9.527, digits = 1)
+[1] 9.5
+> round(9.527, digits = 2)
+[1] 9.53
+> my_char <- "Learn R the easy way"
+> substr(my_char, start = 1, stop = 5)
+[1] "Learn"
+> substr(my_char, start = 7, stop = 7)
+[1] "R"
+> substr(my_char, start = 9, stop = 11)
+[1] "the"
+> substr(my_char, start = 13, stop = 16)
+[1] "easy"
+> substr(my_char, start = 18, stop = 20)
+[1] "way"
+> my_char <- c("Learn", "R", "the", "easy", "way")
+> grep(pattern = "Learn", my_char)
+[1] 1
+> grep(pattern = "R", my_char)
+[1] 2
+> grep(pattern = "the", my_char)
+[1] 3
+> grep(pattern = "easy", my_char)
+[1] 4
+> grep(pattern = "way", my_char)
+[1] 5
+> grep(pattern = "xyz", my_char)
+integer(0)
+> my_char <- c("Learn", "R", "the", "easy", "way")
+> grep(pattern = "learn", my_char)
+integer(0)
+> integer(0)
+integer(0)
+> grep(pattern = "learn", my_char, ignore.case = TRUE)
+[1] 1
+> my_char <- c("Learn", "R", "the", "easy", "way")
+> sub(pattern = "easy", replacement = "effortless", my_char)
+[1] "Learn"      "R"          "the"        "effortless"
+[5] "way"       
+> my_char <- c("Learn", "R", "the", "easy", "way")
+> sub(pattern = "EASY", replacement = "effortless", my_char)
+[1] "Learn" "R"     "the"   "easy"  "way"  
+> sub(pattern = "EASY", replacement = "effortless", my_char, ignore.case = TRUE)
+[1] "Learn"      "R"          "the"        "effortless"
+[5] "way"       
+> my_char <- "Learn R the easy way"
+> strsplit(my_char, split = " ") # ㄏ??ち澄沮
+[[1]]
+[1] "Learn" "R"     "the"   "easy"  "way"  
+
+> [[1]]
+Error: unexpected '[[' in "[["
+> my_char <- "Learn,R,the,easy,way"
+> strsplit(my_char, split = ",") # ㄏ??硆腹ち澄沮
+[[1]]
+[1] "Learn" "R"     "the"   "easy"  "way"  
+
+> [[1]]
+Error: unexpected '[[' in "[["
+> my_char <- "Learn R the easy way"
+> strsplit(my_char, split = " ") # ㄏ??ち澄沮
+[[1]]
+[1] "Learn" "R"     "the"   "easy"  "way"  
+
+> [1]]
+Error: unexpected '[' in "["
+> my_char <- "Learn,R,the,easy,way"
+> strsplit(my_char, split = ",") # ㄏ??硆腹ち澄沮
+[[1]]
+[1] "Learn" "R"     "the"   "easy"  "way"  
+
+> [1]]
+Error: unexpected '[' in "["
+> my_char <- "Learn R the easy way"
+> strsplit(my_char, split = " ") # ㄏ??ち澄沮
+[[1]]
+[1] "Learn" "R"     "the"   "easy"  "way"  
+
+> [1]
+Error: unexpected '[' in "["
+> my_char <- "Learn,R,the,easy,way"
+> strsplit(my_char, split = ",") # ㄏ??硆腹ち澄沮
+[[1]]
+[1] "Learn" "R"     "the"   "easy"  "way"  
+
+> [1]
+Error: unexpected '[' in "["
+> char_1 <- "Learn"
+> char_2 <- "R"
+> char_3 <- "the"
+> char_4 <- "easy"
+> char_5 <- "way"
+> paste(char_1, char_2, char_3, char_4, char_5)
+[1] "Learn R the easy way"
+> paste(char_1, char_2, char_3, char_4, char_5, sep = ",")
+[1] "Learn,R,the,easy,way"
+> paste(char_1, char_2, char_3, char_4, char_5, sep = "")
+[1] "LearnRtheeasyway"
+> my_seq <- 1:5
+> mean(my_seq)
+[1] 3
+> my_seq <- c(my_seq, NA) # ? NA
+> mean(my_seq) # 块 NA
+[1] NA
+> mean(my_seq, na.rm = TRUE) # 逼埃框簗
+[1] 3
+> unction_name <- function(块1, 块2, ..., 块 n, 把计1, 把计2, ..., 把计 n){
+Error: unexpected symbol in "unction_name <- function(块1, 块2, ..., 块 n"
+>   # ㊣ㄧ计磅?祘Α祘Α絏セ砰
+>   return(块)
+Error: object '块' not found
+> }
+Error: unexpected '}' in "}"
+> # ?璹ㄧ计
+> my_squared <- function(x){
++   y <- x^2
++   return(y)
++ }
+> # ㊣ㄧ计
+> my_squared(2)
+[1] 4
+> my_squared(-2:2)
+[1] 4 1 0 1 4
+> # ?璹ㄧ计
+> circle_area <- function(r){
++   area <- pi * r^2 # R 粂?Τず蛾㏄瞯 pi
++   return(area)
++ }
+> # ㊣ㄧ计
+> circle_area(3)
+[1] 28.27433
+> circle_area(5)
+[1] 78.53982
+> # ?璹ㄧ计
+> circle_area <- function(r){
++   area <- pi * r^2 # R 粂?Τず蛾㏄瞯 pi
++   return(area)
++ }
+> # ㊣ㄧ计
+> circle_area(3)
+[1] 28.27433
+> circle_area(5)
+[1] 78.53982
+> 
+> # ?璹ㄧ计
+> circle_calculator <- function(r, is_area){
++   area <- pi * r^2
++   circum <- 2 * pi * r
++   if (is_area == TRUE){
++     return(area)
++   } else {
++     return(circum)
++   }
++ }
+> # ㊣ㄧ计
+> circle_calculator(3, is_area = TRUE)
+[1] 28.27433
+> circle_calculator(3, is_area = FALSE)
+[1] 18.84956
+> ># ?璹ㄧ计
+Error: unexpected '>' in ">"
+>   > ......
+Error: unexpected '>' in "  >"
+> ># ㊣ㄧ计
+Error: unexpected '>' in ">"
+>   >circle_calculator(3)
+Error: unexpected '>' in "  >"
+> Error in circle_calculator(3) :
+Error: unexpected 'in' in "Error in"
+>   argument "is_area" is missing, with no default
+Error: unexpected string constant in "  argument "is_area""
+> # ?璹ㄧ计
+> circle_area <- function(r){
++   area <- pi * r^2 # R 粂?Τず蛾㏄瞯 pi
++   return(area)
++ }
+> # ㊣ㄧ计
+> circle_area(3)
+[1] 28.27433
+> circle_area(5)
+[1] 78.53982
+> 
+> # ?璹ㄧ计
+> circle_calculator <- function(r, is_area){
++   area <- pi * r^2
++   circum <- 2 * pi * r
++   if (is_area == TRUE){
++     return(area)
++   } else {
++     return(circum)
++   }
++ }
+> # ㊣ㄧ计
+> circle_calculator(3, is_area = TRUE)
+[1] 28.27433
+> circle_calculator(3, is_area = FALSE)
+[1] 18.84956
+> 
+> # ﹚竡?璹ㄧ计
+> ironmen_stats <- function(ironmen_vector) {
++   max_ironmen <- max(ironmen_vector)
++   min_ironmen <- min(ironmen_vector)
++   ttl_groups <- length(ironmen_vector)
++   ttl_ironmen <- sum(ironmen_vector)
++   stats_list <- list(max_ironmen = max_ironmen,
++                      min_ironmen = min_ironmen,
++                      ttl_groups = ttl_groups,
++                      ttl_ironmen = ttl_ironmen
++   )
++   return(stats_list)
++ }
+> # ㊣?璹ㄧ计
+> ironmen <- c(50, 8, 16, 12, 6, 62)
+> paste("程", ironmen_stats(ironmen)$max_ironmen, sep = '')
+[1] "程62"
+> paste("程ぶ", ironmen_stats(ironmen)$min_ironmen, sep = '')
+[1] "程ぶ6"
+> paste("羆舱计", ironmen_stats(ironmen)$ttl_groups, sep = '')
+[1] "羆舱计6"
+> paste("羆臟?计", ironmen_stats(ironmen)$ttl_ironmen, sep = '')
+[1] "羆臟?计154"
+> # 璹ㄧ计
+> my_length <- function(x){
++   counts <- 0
++   for (i in x){
++     counts <- counts + 1
++   }
++   return(counts)
++ }
+> # ミ秖
+> my_vec <- seq(from = 15, to = 87, by = 3)
+> # ㊣ず场籔?璹ㄧ计
+> length(my_vec)
+[1] 25
+> my_length(my_vec)
+[1] 25
+> # 璹ㄧ计
+> my_sum <- function(x){
++   summation <- 0
++   for (i in x){
++     summation <- summation + i
++   }
++   return(summation)
++ }
+> # ㊣ず籔璹ㄧ计
+> sum(1:10)
+[1] 55
+> my_sum(1:10)
+[1] 55
+> # ﹚竡?璹ㄧ计
+> my_mean <- function(input_vector) {
++   my_sum <- function(input_vector) {
++     temp_sum <- 0
++     for (i in input_vector) {
++       temp_sum <- temp_sum + i
++     }
++     return(temp_sum)
++   }
++   my_length <- function(input_vector) {
++     temp_length <- 0
++     for (i in input_vector) {
++       temp_length <- temp_length + 1
++     }
++     return(temp_length)
++   }
++   return(my_sum(input_vector) / my_length(input_vector))
++ }
+> # ㊣?璹ㄧ计
+> my_vector <- c(51, 8, 18, 13, 6, 64)
+> my_mean(my_vector)
+[1] 26.66667

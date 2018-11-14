@@ -1,0 +1,133 @@
+import random
+results = [] 
+b = 0
+
+while b<4:
+    a = random.randint(1,6)
+    results.append(a)
+    if a == 6:
+        b = b+1
+    
+print(results)
+
+
+[6, 2, 3, 4, 2, 5, 3, 2, 3, 4, 5, 5, 4, 1, 1, 6, 6, 2, 4, 4, 5, 2, 4, 1, 5, 3, 6]
+
+
+---------------------------------------------------------------------------------------
+a=1
+while a<101:
+  fift = a%15
+  fif = a%5
+  thr = a%3
+  if fift ==0:
+    print("fift")
+  elif fif ==0:
+      print("fif")
+  elif thr ==0:
+      print("thr")
+  elif a==a:
+    print(a)
+  a = a+1
+
+1
+2
+thr
+4
+fif
+thr
+7
+8
+thr
+fif
+11
+thr
+13
+14
+fift
+16
+17
+thr
+19
+fif
+thr
+22
+23
+thr
+fif
+26
+thr
+28
+29
+fift
+31
+32
+thr
+34
+fif
+thr
+37
+38
+thr
+fif
+41
+thr
+43
+44
+fift
+46
+47
+thr
+49
+fif
+thr
+52
+53
+thr
+fif
+56
+thr
+58
+59
+fift
+61
+62
+thr
+64
+fif
+thr
+67
+68
+thr
+fif
+71
+thr
+73
+74
+fift
+76
+77
+thr
+79
+fif
+thr
+82
+83
+thr
+fif
+86
+thr
+88
+89
+fift
+91
+92
+thr
+94
+fif
+thr
+97
+98
+thr
+fif
+
